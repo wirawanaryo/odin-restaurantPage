@@ -22,6 +22,7 @@ header{
   box-shadow: 0 1px 5px #1a1a1a;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 .logo{
   font-family: 'logoFont';
@@ -154,7 +155,7 @@ nav>button.active{
   gap: 0.7rem;
   padding: 1rem;
   flex-direction: column;
-  height: max(270px, 15vh);
+  height: max(280px, 15vh);
   width: max(300px, 15vw);
   
   font-family: Arial, Helvetica, sans-serif;
@@ -170,9 +171,178 @@ nav>button.active{
   font-style: italic;
   color: #192423;
 }
-.rvwrName{
-  display: flex;
+.rvwrTag{
+  display: flex; 
+  align-items: center; 
+  gap: 1rem;
+}
+.rvwrName{    
   gap: 1rem;
   font-weight: bold;
   color: #000000;
+}
+.rvwrAvatar{ 
+  background-image: url(./assets/avatars/bear.png);
+  background-size: cover;
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+/* menuSection */
+.menuTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "logoFont";
+  color: #2f4543;
+  font-size: 3rem;
+  padding: 3rem 0 3rem 0;
+  gap: 1rem;
+}
+.menuTitle>h1{
+  font-weight: 100;
+}
+.menuTitle>h1>span{
+  color: var(--accent-color);  
+  font-weight: 100;
+}
+.menuTitle>span{  
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: #838383;
+  font-size: 1rem;
+}
+
+.menuArea{
+  margin: 20vh 0 20vh 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 10rem;
+  place-items: center;
+}
+.menuReservation{
+  margin: 10vh 10vh 15vh 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+}
+.menuReservation>span{
+  font-family: "logoFont";
+  font-size: 5rem;
+  color: var(--primary-color)
+}
+.serviceList{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;  
+}
+.serviceCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cateringIcon{
+  background-color: var(--accent-color);
+  mask-image: url(./assets/icon/catering.svg);
+  mask-size: cover;
+  mask-position: center;
+  width: 10vw;
+  height: 10vw;
+}
+.deliIcon{
+  background-color: var(--accent-color);
+  mask-image: url(./assets/icon/truck-delivery.svg);
+  mask-size: cover;
+  mask-position: center;
+  width: 10vw;
+  height: 10vw;
+}
+.bookIcon{
+  background-color: var(--accent-color);
+  mask-image: url(./assets/icon/table-chair.svg);
+  mask-size: cover;
+  mask-position: center;
+  width: 10vw;
+  height: 10vw;
+}
+.serviceCard>h2{  
+  color: #2f4543;
+  font-size: 1.3rem;
+}
+.serviceCard>span{
+  text-align: center;
+  font-size: 1rem;
+  color: #2f4543;
+  margin-top: 1rem;
+  width: 20vw;
+}
+.menuCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35vh;
+  height: 45vh;
+  background-color: var(--primary-color);
+  border-radius: 10%;
+  padding: 0 1.5rem 1rem 1.5rem;
+  gap: 1rem;
+  justify-content: space-between;
+  color: white;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
+}
+.menuImg{
+  background-color: #2f4543;
+  width: 25vh;
+  height: 25vh;
+  transform: translate(0, -8vh);
+  border-radius: 50%;
+  margin-bottom: -8vh;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.menuName{
+  font-family: "logoFont";
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+.menuDesc{  
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+.menuPrice{
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;  
+}
+.risotto{
+  background-image: url(./assets/img/risotto.jpg);
+  background-size: cover;
+}
+.apple{
+  background-image: url(./assets/img/apple\ \(1\).jpg);
+  background-size: cover;
+}
+.golden{
+  background-image: url(./assets/img/golden.jpg);
+  background-size: cover;
+  background-position: center 55%;  
+}
+.steak{
+  background-image: url(./assets/img/steak.jpg);
+  background-size: cover;
+}
+.forest{
+  background-image: url(./assets/img/forest.jpg);
+  background-size: cover;
+}
+.cake{
+  background-image: url(./assets/img/cake.jpg);
+  background-size: cover;
+  background-position: 55% 42%;
 }
