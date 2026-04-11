@@ -3,7 +3,8 @@ function MenuPage() {
      <div class="menuTitle">
       <h1 >Our <span>Menu</span></h1>
       <span>"Enjoy our handcrafted heart-warming meal, made with high quality ingredients"</span>
-    </div>    
+    </div> 
+    <div class="hl"></div>   
     <div class="menuArea">
       <div class="menuCard">
         <div class="menuImg apple"></div>
@@ -42,6 +43,7 @@ function MenuPage() {
         <span class="menuPrice">$10</span>
       </div>
     </div>
+    <div class="hl"></div> 
     <div class="menuReservation">
       <span>We Provide</span>
       <div class="serviceList">

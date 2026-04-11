@@ -8,6 +8,7 @@ import { loadContactContent } from "./contact.js";
 
 loadHomeContent();
 
+
 const content = document.getElementById("content");
 const homeBtn = document.querySelector("#homeBtn");
 const menuBtn = document.querySelector("#menuBtn");
