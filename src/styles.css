@@ -44,8 +44,9 @@ nav>button{
   border: none;
   padding: 0;
 }
-nav>button.active{
+.btnLight{
   color: var(--accent-color);
+  font-size: 2rem;
 }
 
 .intro{
@@ -413,4 +414,9 @@ p+span{
 }
 .mailIcon{  
   mask-image: url(./assets/icon/email-outline.svg);  
+}
+.vl{
+  border-left: 1px dashed rgb(209, 209, 209);
+  height: 50vh;
+  margin: 0 -5vw 0 -5vw;
 }
